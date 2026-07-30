@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
 <title>فلوسي — مصاريفك بتتسجل لوحدها</title>
 <meta name="description" content="فلوسي — مصاريفك بتتسجل لوحدها من رسايل بنكك. من غير نت، ورسايلك مبتخرجش برا موبايلك.">
 <link rel="icon" href="favicon.png" type="image/png">
@@ -31,56 +32,17 @@
 @font-face{font-family:"Plex Mono";src:url(fonts/mono-500.woff2) format("woff2");font-weight:500;font-display:swap}
 
 :root{
+  color-scheme:light;
   --teal:#0c6b5e; --mint:#9cebd6; --mint-tint:#d7f3ec;
   --ink:#141413; --ink-soft:#1f1e1c; --muted:#5a6169; --faint:#8a8f94;
   --ground:#f4f6f7; --surface:#ffffff;
   --border:#e1e4e6; --hairline:#eaecee;
   --expense:#e5484d; --amber-tint:#fbebd7; --amber-ink:#b45309;
-  --sms-bubble:#edeff1; --sms-ink:#1f1e1c;
-  --on-teal:#ffffff; --cta-bg:#0c6b5e; --cta-border:transparent;
+  --sms-bubble:#edeff1; --sms-ink:#1f1e1c; --cta-bg:#0c6b5e; --cta-border:transparent;
   --cta-head:#ffffff; --cta-body:rgba(255,255,255,.82);
   --shadow:0 12px 30px -22px rgba(20,40,40,.35);
   --shadow-lift:0 18px 44px -26px rgba(12,107,94,.45);
 }
-@media (prefers-color-scheme:dark){
-  :root{
-    --teal:#9cebd6; --mint:#9cebd6; --mint-tint:#16302b;
-    --ink:#eef4f2; --ink-soft:#dfe9e6; --muted:#9aa8a4; --faint:#71807c;
-    --ground:#0d1614; --surface:#131e1c;
-    --border:#24322f; --hairline:#1d2a27;
-    --expense:#ff7a7e; --amber-tint:#33260f; --amber-ink:#e8b467;
-    --sms-bubble:#1c2927; --sms-ink:#dfe9e6;
-    --on-teal:#0d1614; --cta-bg:#0f2b26; --cta-border:#1d4a41;
-    --cta-head:#9cebd6; --cta-body:#a9c4bd;
-    --shadow:0 12px 30px -22px rgba(0,0,0,.7);
-    --shadow-lift:0 18px 44px -26px rgba(0,0,0,.8);
-  }
-}
-:root[data-theme="dark"]{
-  --teal:#9cebd6; --mint:#9cebd6; --mint-tint:#16302b;
-  --ink:#eef4f2; --ink-soft:#dfe9e6; --muted:#9aa8a4; --faint:#71807c;
-  --ground:#0d1614; --surface:#131e1c;
-  --border:#24322f; --hairline:#1d2a27;
-  --expense:#ff7a7e; --amber-tint:#33260f; --amber-ink:#e8b467;
-  --sms-bubble:#1c2927; --sms-ink:#dfe9e6;
-  --on-teal:#0d1614; --cta-bg:#0f2b26; --cta-border:#1d4a41;
-  --cta-head:#9cebd6; --cta-body:#a9c4bd;
-  --shadow:0 12px 30px -22px rgba(0,0,0,.7);
-  --shadow-lift:0 18px 44px -26px rgba(0,0,0,.8);
-}
-:root[data-theme="light"]{
-  --teal:#0c6b5e; --mint:#9cebd6; --mint-tint:#d7f3ec;
-  --ink:#141413; --ink-soft:#1f1e1c; --muted:#5a6169; --faint:#8a8f94;
-  --ground:#f4f6f7; --surface:#ffffff;
-  --border:#e1e4e6; --hairline:#eaecee;
-  --expense:#e5484d; --amber-tint:#fbebd7; --amber-ink:#b45309;
-  --sms-bubble:#edeff1; --sms-ink:#1f1e1c;
-  --on-teal:#ffffff; --cta-bg:#0c6b5e; --cta-border:transparent;
-  --cta-head:#ffffff; --cta-body:rgba(255,255,255,.82);
-  --shadow:0 12px 30px -22px rgba(20,40,40,.35);
-  --shadow-lift:0 18px 44px -26px rgba(12,107,94,.45);
-}
-
 *{box-sizing:border-box}
 body{margin:0;background:var(--ground);color:var(--ink);
   font:400 16px/1.75 "Plex AR",system-ui,sans-serif;
