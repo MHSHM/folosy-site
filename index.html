@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>فلوسي — مصاريفك بتتسجل لوحدها</title>
+<meta name="description" content="فلوسي — مصاريفك بتتسجل لوحدها من رسايل بنكك. من غير نت، ورسايلك مبتخرجش برا موبايلك.">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="canonical" href="https://mhshm.github.io/folosy-site/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="فلوسي">
+<meta property="og:locale" content="ar_EG">
+<meta property="og:title" content="فلوسي — مصاريفك بتتسجل لوحدها">
+<meta property="og:description" content="فلوسي — مصاريفك بتتسجل لوحدها من رسايل بنكك. من غير نت، ورسايلك مبتخرجش برا موبايلك.">
+<meta property="og:url" content="https://mhshm.github.io/folosy-site/">
+<meta property="og:image" content="https://mhshm.github.io/folosy-site/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="586">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="فلوسي — مصاريفك بتتسجل لوحدها">
+<meta name="twitter:description" content="فلوسي — مصاريفك بتتسجل لوحدها من رسايل بنكك. من غير نت، ورسايلك مبتخرجش برا موبايلك.">
+<meta name="twitter:image" content="https://mhshm.github.io/folosy-site/og.png">
+
+<link rel="preload" as="font" type="font/woff2" href="fonts/ar-400.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="fonts/ar-700.woff2" crossorigin>
+
+<style>
+@font-face{font-family:"Plex AR";src:url(fonts/ar-400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Plex AR";src:url(fonts/ar-700.woff2) format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"Plex Mono";src:url(fonts/mono-500.woff2) format("woff2");font-weight:500;font-display:swap}
+
+:root{
+  --teal:#0c6b5e; --mint:#9cebd6; --mint-tint:#d7f3ec;
+  --ink:#141413; --ink-soft:#1f1e1c; --muted:#5a6169; --faint:#8a8f94;
+  --ground:#f4f6f7; --surface:#ffffff;
+  --border:#e1e4e6; --hairline:#eaecee;
+  --expense:#e5484d; --amber-tint:#fbebd7; --amber-ink:#b45309;
+  --sms-bubble:#edeff1; --sms-ink:#1f1e1c;
+  --on-teal:#ffffff; --cta-bg:#0c6b5e; --cta-border:transparent;
+  --cta-head:#ffffff; --cta-body:rgba(255,255,255,.82);
+  --shadow:0 12px 30px -22px rgba(20,40,40,.35);
+  --shadow-lift:0 18px 44px -26px rgba(12,107,94,.45);
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --teal:#9cebd6; --mint:#9cebd6; --mint-tint:#16302b;
+    --ink:#eef4f2; --ink-soft:#dfe9e6; --muted:#9aa8a4; --faint:#71807c;
+    --ground:#0d1614; --surface:#131e1c;
+    --border:#24322f; --hairline:#1d2a27;
+    --expense:#ff7a7e; --amber-tint:#33260f; --amber-ink:#e8b467;
+    --sms-bubble:#1c2927; --sms-ink:#dfe9e6;
+    --on-teal:#0d1614; --cta-bg:#0f2b26; --cta-border:#1d4a41;
+    --cta-head:#9cebd6; --cta-body:#a9c4bd;
+    --shadow:0 12px 30px -22px rgba(0,0,0,.7);
+    --shadow-lift:0 18px 44px -26px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --teal:#9cebd6; --mint:#9cebd6; --mint-tint:#16302b;
+  --ink:#eef4f2; --ink-soft:#dfe9e6; --muted:#9aa8a4; --faint:#71807c;
+  --ground:#0d1614; --surface:#131e1c;
+  --border:#24322f; --hairline:#1d2a27;
+  --expense:#ff7a7e; --amber-tint:#33260f; --amber-ink:#e8b467;
+  --sms-bubble:#1c2927; --sms-ink:#dfe9e6;
+  --on-teal:#0d1614; --cta-bg:#0f2b26; --cta-border:#1d4a41;
+  --cta-head:#9cebd6; --cta-body:#a9c4bd;
+  --shadow:0 12px 30px -22px rgba(0,0,0,.7);
+  --shadow-lift:0 18px 44px -26px rgba(0,0,0,.8);
+}
+:root[data-theme="light"]{
+  --teal:#0c6b5e; --mint:#9cebd6; --mint-tint:#d7f3ec;
+  --ink:#141413; --ink-soft:#1f1e1c; --muted:#5a6169; --faint:#8a8f94;
+  --ground:#f4f6f7; --surface:#ffffff;
+  --border:#e1e4e6; --hairline:#eaecee;
+  --expense:#e5484d; --amber-tint:#fbebd7; --amber-ink:#b45309;
+  --sms-bubble:#edeff1; --sms-ink:#1f1e1c;
+  --on-teal:#ffffff; --cta-bg:#0c6b5e; --cta-border:transparent;
+  --cta-head:#ffffff; --cta-body:rgba(255,255,255,.82);
+  --shadow:0 12px 30px -22px rgba(20,40,40,.35);
+  --shadow-lift:0 18px 44px -26px rgba(12,107,94,.45);
+}
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);
+  font:400 16px/1.75 "Plex AR",system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased}
+.page{max-width:640px;margin:0 auto;padding:0 20px 72px}
+section{padding:44px 0;border-top:1px solid var(--hairline)}
+section:first-of-type{border-top:0}
+h1,h2,h3{margin:0;font-weight:700;text-wrap:balance;line-height:1.3}
+h1{font-size:clamp(30px,7.5vw,42px);letter-spacing:-.01em}
+h2{font-size:22px}
+h3{font-size:16px}
+p{margin:0;color:var(--muted)}
+.mono{font-family:"Plex Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums}
+a.inline{color:var(--teal);font-weight:700;text-decoration:none;
+  border-bottom:1px solid var(--teal)}
+a.inline:hover{opacity:.75}
+a:focus-visible,button:focus-visible{outline:2px solid var(--teal);outline-offset:3px;border-radius:4px}
+
+.bar{display:flex;align-items:center;gap:10px;padding:22px 0 6px;
+  font-weight:700;font-size:18px;color:var(--ink)}
+.mark{width:34px;height:34px;border-radius:10px;background:#0c6b5e;
+  display:grid;place-items:center;flex:none;box-shadow:var(--shadow)}
+.mark span{color:#9cebd6;font-weight:700;font-size:19px;line-height:1}
+
+/* --- hero --- */
+.hero{padding-top:24px}
+.hero h1{margin-bottom:14px}
+.hero .lede{font-size:17px;max-width:40ch}
+.soon{display:inline-flex;align-items:center;gap:7px;margin-bottom:18px;
+  background:var(--mint-tint);color:var(--teal);border-radius:999px;
+  padding:5px 12px;font-size:12.5px;font-weight:700}
+.soon i{width:6px;height:6px;border-radius:50%;background:var(--teal);flex:none}
+
+/* --- sms -> row --- */
+.demo{margin-top:30px}
+.demo-label{font-size:11.5px;font-weight:700;letter-spacing:.08em;
+  color:var(--faint);margin-bottom:9px}
+.sms{background:var(--sms-bubble);color:var(--sms-ink);border-radius:16px;
+  padding:13px 15px;font-size:14.5px;line-height:1.8;max-width:92%;
+  border:1px solid var(--hairline)}
+.sms .from{display:block;font-size:11px;font-weight:700;letter-spacing:.06em;
+  color:var(--faint);margin-bottom:5px}
+.link{position:relative;height:44px;width:2px;background:var(--border);margin:0 26px 0 0}
+.link::after{content:"";position:absolute;bottom:0;left:50%;width:9px;height:9px;
+  border-right:2px solid var(--border);border-bottom:2px solid var(--border);
+  transform:translate(-50%,2px) rotate(45deg)}
+.row{background:var(--surface);border:1px solid var(--border);border-radius:14px;
+  padding:13px 15px;display:flex;align-items:center;gap:12px;box-shadow:var(--shadow-lift)}
+.avatar{width:38px;height:38px;border-radius:11px;background:var(--mint-tint);
+  color:var(--teal);display:grid;place-items:center;font-weight:700;font-size:15px;flex:none}
+.row .who{flex:1;min-width:0}
+.row .who strong{display:block;font-size:15px;font-weight:700;color:var(--ink-soft);
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.row .who span{font-size:12.5px;color:var(--faint)}
+.amt{font-size:16px;font-weight:500;color:var(--expense);white-space:nowrap}
+.amt small{font-size:13px}
+
+/* --- proofs --- */
+.proofs{margin-top:6px}
+.proof{padding:18px 0;border-top:1px solid var(--hairline)}
+.proof h3{margin-bottom:5px}
+.proof p{font-size:15px}
+
+/* --- overlapping screenshot deck --- */
+/* widen past the reading column by pulling both sides out equally —
+   symmetric margins centre identically in RTL and LTR */
+.deck{position:relative;
+  margin:22px calc((min(calc(100vw - 32px),760px) - 100%) / -2) 0;
+  aspect-ratio:1/.8}
+.dcard{position:absolute;top:50%;left:50%;width:36%;
+  padding:0;border:0;background:transparent;cursor:pointer;line-height:0;
+  --r:var(--rb);
+  transform:translate(-50%,-50%) translateX(var(--x)) rotate(var(--r)) scale(var(--s,1));
+  transition:transform .42s cubic-bezier(.22,.68,.35,1),opacity .32s ease,filter .32s ease;
+  will-change:transform}
+.dcard:nth-child(1){--x:-29%;--rb:-9deg;z-index:4}
+.dcard:nth-child(2){--x:-10%;--rb:-3deg;z-index:3}
+.dcard:nth-child(3){--x:10%;--rb:3deg;z-index:2}
+.dcard:nth-child(4){--x:29%;--rb:9deg;z-index:1}
+.dcard img{width:100%;height:auto;border-radius:13px;display:block;
+  box-shadow:0 16px 34px -20px rgba(10,45,40,.55)}
+.dcard[aria-pressed="false"]{opacity:.92}
+.dcard[aria-pressed="true"]{--r:0deg;--s:1.16;z-index:20;opacity:1}
+.dcard[aria-pressed="true"] img{box-shadow:0 26px 52px -22px rgba(10,45,40,.7)}
+.dcard:focus-visible{outline:none}
+.dcard:focus-visible img{outline:3px solid var(--teal);outline-offset:4px}
+/* hover focuses the card under the pointer and dims the others */
+@media (hover:hover){
+  .deck:has(.dcard:hover) .dcard:not(:hover){--r:var(--rb);--s:1;opacity:.34;filter:saturate(.7)}
+  .dcard:hover{--r:0deg;--s:1.16;z-index:30;opacity:1}
+  .dcard:hover img{box-shadow:0 26px 52px -22px rgba(10,45,40,.7)}
+}
+/* narrow screens: fewer pixels to spend, so bigger cards and tighter spread */
+@media (max-width:520px){
+  .deck{aspect-ratio:1/1}
+  .dcard{width:46%}
+  .dcard:nth-child(1){--x:-25%}
+  .dcard:nth-child(2){--x:-8.5%}
+  .dcard:nth-child(3){--x:8.5%}
+  .dcard:nth-child(4){--x:25%}
+}
+.deckcap{margin-top:6px;text-align:center;font-size:15px;font-weight:700;
+  color:var(--ink);min-height:1.7em}
+@media (prefers-reduced-motion:reduce){.dcard{transition:none}}
+
+/* --- banks --- */
+.banks{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.bank{background:var(--surface);border:1px solid var(--border);border-radius:10px;
+  padding:8px 13px;font-size:14px;color:var(--ink-soft)}
+
+/* --- pricing --- */
+.pricetag{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-top:16px}
+.pricetag .big{font-size:34px;font-weight:700;color:var(--teal);line-height:1}
+.pricetag .unit{font-size:15px;color:var(--muted)}
+.pricetag .alt{font-size:14px;color:var(--muted)}
+.yearchip{background:var(--mint-tint);color:var(--teal);border-radius:999px;
+  padding:3px 10px;font-size:12.5px;font-weight:700}
+.unlocks{margin-top:22px;background:var(--surface);border:1px solid var(--border);
+  border-radius:14px;overflow:hidden}
+.unlocks .head{padding:13px 16px;font-size:12px;font-weight:700;letter-spacing:.06em;
+  color:var(--faint);border-bottom:1px solid var(--hairline)}
+.unlock{display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:13px 16px;border-top:1px solid var(--hairline);font-size:15px}
+.unlock:first-of-type{border-top:0}
+.unlock .what{color:var(--ink-soft);font-weight:700}
+.unlock .free{background:var(--mint-tint);color:var(--teal);border-radius:999px;
+  padding:3px 10px;font-size:12px;font-weight:700;white-space:nowrap;flex:none}
+.cancel{margin-top:12px;font-size:13px;color:var(--faint)}
+.note{margin-top:16px;background:var(--amber-tint);color:var(--amber-ink);
+  border-radius:12px;padding:12px 14px;font-size:14.5px;line-height:1.7}
+
+/* --- privacy --- */
+.privacy{display:flex;flex-direction:column;gap:11px;margin-top:16px}
+.privacy div{display:flex;gap:10px;font-size:15px;color:var(--muted);align-items:flex-start}
+.privacy b{color:var(--teal);font-weight:700;flex:none}
+
+/* --- cta --- */
+.cta{background:var(--cta-bg);border:1px solid var(--cta-border);
+  border-radius:20px;padding:28px 22px;text-align:center;box-shadow:var(--shadow)}
+.cta h2{color:var(--cta-head);margin-bottom:8px}
+.cta p{color:var(--cta-body);font-size:15px;max-width:34ch;margin:0 auto}
+.btn{display:inline-block;margin-top:18px;background:var(--mint);color:#0a554a;
+  font-family:inherit;font-weight:700;font-size:16px;text-decoration:none;
+  padding:14px 28px;border-radius:999px}
+.btn:hover{opacity:.88}
+
+footer{padding:30px 0 0;border-top:1px solid var(--hairline);margin-top:44px;
+  font-size:13px;color:var(--faint);display:flex;flex-wrap:wrap;gap:8px 16px;
+  align-items:center;justify-content:space-between}
+footer a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--border)}
+footer a:hover{color:var(--teal);border-color:var(--teal)}
+
+.anim{opacity:0;animation:rise .55s cubic-bezier(.22,.68,.35,1) forwards}
+.d1{animation-delay:.15s}.d2{animation-delay:.55s}.d3{animation-delay:.78s}
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.anim{opacity:1;animation:none}}
+</style>
+</head>
+<body>
+<div class="page" dir="rtl" lang="ar">
+
+  <div class="bar">
+    <span class="mark"><span>ف</span></span>
+    <span>فلوسي</span>
+  </div>
+
+  <section class="hero">
+    <div class="soon"><i></i><span>قريب جدًا على جوجل بلاي</span></div>
+    <h1>مصاريفك بتتسجل لوحدها</h1>
+    <p class="lede">أول ما رسالة البنك توصل، العملية بتتسجل عندك على طول — من غير ما تكتب حاجة، ومن غير نت.</p>
+
+    <div class="demo">
+      <div class="demo-label anim d1">رسالة زي دي توصلك</div>
+      <div class="sms anim d1">
+        <span class="from">CA-Egypt</span>
+        خصم 250.00 جم من حساب ****1234 فى 12/07 MARKET EL SALAM الرصيد المتاح جم 8,410.50
+      </div>
+      <div class="link anim d2" aria-hidden="true"></div>
+      <div class="row anim d3">
+        <div class="avatar">M</div>
+        <div class="who">
+          <strong>MARKET EL SALAM</strong>
+          <span>بقالة · دلوقتي</span>
+        </div>
+        <div class="amt mono" dir="ltr">−250.00 <small>EGP</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>ليه فلوسي؟</h2>
+    <div class="proofs">
+      <div class="proof">
+        <h3>اوتوماتيك</h3>
+        <p>أي شراء أو تحويل أو سحب بيتسجل في نفس اللحظة اللي رسالة البنك بتوصل فيها — حتى والتطبيق مقفول.</p>
+      </div>
+      <div class="proof">
+        <h3>من غير نت</h3>
+        <p>البرنامج بيشتغل بالكامل من غير نت، وده بسبب سياسة الخصوصية الصارمة الخاصة بينا.</p>
+      </div>
+      <div class="proof">
+        <h3>رسايلك مبتخرجش برا موبايلك</h3>
+        <p>مفيش تسجيل حساب، معندناش سيرفرات نخزن فيها بياناتك الشخصية، كل حاجة بتحصل جوة موبايلك بمنتهى الخصوصية.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>جوه التطبيق</h2>
+
+    <div class="deck" id="deck">
+      <button type="button" class="dcard"
+              data-cap="رصيدك وميزانيتك في شاشة واحدة" aria-pressed="true">
+        <img src="shots/1-dashboard.webp" loading="lazy" decoding="async" alt="الشاشة الرئيسية: إجمالي الرصيد وتحليل الفئات" width="540" height="960">
+      </button>
+      <button type="button" class="dcard"
+              data-cap="تفصيل مصاريفك على مدار أي فترة" aria-pressed="false">
+        <img src="shots/2-spending.webp" loading="lazy" decoding="async" alt="شاشة المصاريف: المصروف مقابل الميزانية وأهم الفئات" width="540" height="960">
+      </button>
+      <button type="button" class="dcard"
+              data-cap="حدد ميزانية لكل فئة على حدة" aria-pressed="false">
+        <img src="shots/3-categories.webp" loading="lazy" decoding="async" alt="إدارة الفئات: ميزانية وحدود لكل فئة" width="540" height="960">
+      </button>
+      <button type="button" class="dcard"
+              data-cap="تدوس مرة واحدة، وفلوسي يفتكر المحل" aria-pressed="false">
+        <img src="shots/4-review.webp" loading="lazy" decoding="async" alt="شاشة المراجعة: تصنيف المعاملات بضغطة واحدة" width="540" height="960">
+      </button>
+    </div>
+
+    <p class="deckcap" id="deckcap">رصيدك وميزانيتك في شاشة واحدة</p>
+  </section>
+
+  <section>
+    <h2>البنوك المدعومة</h2>
+    <p>سبع بنوك دلوقتي، وشغالين نضيف غيرهم. لو عايز البنك بتاعك يكون من البنوك المدعومة <a class="inline" href="https://docs.google.com/forms/d/e/1FAIpQLSdu3-diquyxDTaavtkxwZcShlKbDCv-b3U9US2_q4b6Stwl_Q/viewform" target="_blank" rel="noopener">دوس هنا</a>.</p>
+    <div class="banks">
+      <div class="bank">البنك الأهلي المصري</div>
+      <div class="bank">بنك مصر</div>
+      <div class="bank">البنك التجاري الدولي CIB</div>
+      <div class="bank">QNB</div>
+      <div class="bank">كريدي أجريكول مصر</div>
+      <div class="bank">بنك الإسكندرية</div>
+      <div class="bank">بنك فيصل الإسلامي</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>السعر؟</h2>
+
+    <div class="pricetag">
+      <span class="big mono" dir="ltr">60</span>
+      <span class="unit">ج.م / شهر</span>
+      <span class="alt">أو <span class="mono" dir="ltr">600</span> ج.م / سنة</span>
+      <span class="yearchip">شهرين ببلاش</span>
+    </div>
+
+    <div class="unlocks">
+      <div class="head">اللي هيتفتحلك مع بريميوم</div>
+      <div class="unlock"><span class="what">تتبع تلقائي من غير حدود</span><span class="free">المجاني · <span class="mono" dir="ltr">15</span> / شهر</span></div>
+      <div class="unlock"><span class="what">استيراد سجلك بالكامل</span><span class="free">المجاني · شهر واحد</span></div>
+      <div class="unlock"><span class="what">فترات ميزانية مخصصة</span><span class="free">المجاني · شهري</span></div>
+      <div class="unlock"><span class="what">تصفح الميزانيات القديمة</span><span class="free">المجاني · الحالية</span></div>
+      <div class="unlock"><span class="what">حدود ميزانية لكل فئة</span><span class="free">المجاني · ميزانية واحدة</span></div>
+    </div>
+
+    <div class="note">لو عدّيت الـ<span class="mono" dir="ltr">15</span> رسالة وانت على المجاني، الرسايل الزيادة بتستناك تضيفها يدوي ومش بتضيع منك.</div>
+  </section>
+
+  <section>
+    <h2>الخصوصية، باختصار</h2>
+    <div class="privacy">
+      <div><b>·</b><span>مفيش تسجيل حساب ومش بنطلب منك اي بيانات شخصية، بالنسبالنا انت مجهول تماما.</span></div>
+      <div><b>·</b><span>رسايل البنك بتتقري وتتحلل جوه موبايلك، ومبتتبعتش لأي حد.</span></div>
+      <div><b>·</b><span>مفيش إعلانات ومفيش بيع بيانات.</span></div>
+    </div>
+    <p style="margin-top:16px;font-size:14px">
+      <a class="inline" href="https://mhshm.github.io/folosy-legal/" target="_blank" rel="noopener">اقرا سياسة الخصوصية كاملة</a>
+    </p>
+  </section>
+
+  <section>
+    <div class="cta">
+      <h2>اعرف أول ما ينزل</h2>
+      <p>تابعنا على واتساب، وهنقولك أول ما فلوسي ينزل على جوجل بلاي.</p>
+      <a class="btn" href="https://whatsapp.com/channel/0029VbDSxGJGk1FvnimL8l0z" target="_blank" rel="noopener">تابعنا على واتساب</a>
+    </div>
+  </section>
+
+  <footer>
+    <span>فلوسي · مصر</span>
+    <span>
+      <a href="mailto:folosy4@gmail.com">folosy4@gmail.com</a>
+      &nbsp;·&nbsp;
+      <a href="https://mhshm.github.io/folosy-legal/" target="_blank" rel="noopener">سياسة الخصوصية</a>
+    </span>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var deck=document.getElementById("deck");
+  if(!deck) return;
+  var cards=[].slice.call(deck.querySelectorAll(".dcard"));
+  var cap=document.getElementById("deckcap");
+  cards.forEach(function(c){
+    c.addEventListener("click",function(){
+      cards.forEach(function(o){o.setAttribute("aria-pressed", o===c ? "true" : "false")});
+      cap.textContent=c.getAttribute("data-cap");
+    });
+  });
+})();
+</script>
+</body>
+</html>
