@@ -1,6 +1,8 @@
 # folosy-site
 
-The Folosy pre-launch landing page. Plain static HTML — no build step, no dependencies.
+The Folosy landing page. Plain static HTML — no build step, no dependencies.
+
+The app is **live on Google Play**: https://play.google.com/store/apps/details?id=com.folosy.app
 
 **Live at:** https://mhshm.github.io/folosy-site/
 
