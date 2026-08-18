@@ -14,10 +14,19 @@ The app is **live on Google Play**: https://play.google.com/store/apps/details?i
 
 Leave the separate `folosy-legal` repo alone — its URL is filed in the Play Console paperwork.
 
-## Before it goes live
+## The giveaway code
 
-`index.html` has **one placeholder**: the «دوس هنا» link in the banks section is `href="#"`,
-marked with a `TODO` comment. Point it at the bank-request Google Form.
+The pricing section publishes the giveaway code `FOLOS-YPROO` (stored as `FOLOSYPROO`).
+It is a **giveaway** row in the `folosy-promo` D1 database: unlimited redemptions, nobody is
+ever revoked, and **each redeemer gets their own fresh 30 days** counted from their redemption.
+
+Two consequences worth knowing before editing that block:
+
+- Anyone can re-redeem it every month, so it is effectively permanent free premium for whoever
+  has the string. That is what a giveaway code is for — it is not a bug.
+- **Deleting the row in the admin is the only kill switch.** Editing `expires_at` on a giveaway
+  row does nothing (the redeem Worker ignores it), and removing the code from this page does not
+  recall the copies already circulating.
 
 ## Files
 
