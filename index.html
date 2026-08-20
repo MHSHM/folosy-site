@@ -218,6 +218,24 @@ footer a:hover{color:var(--teal);border-color:var(--teal)}
 @keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.anim{opacity:1;animation:none}}
 </style>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1005710099170954');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1005710099170954&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 <body>
 <div class="page" dir="rtl" lang="ar">
@@ -390,6 +408,22 @@ footer a:hover{color:var(--teal);border-color:var(--teal)}
     });
   });
 })();
+</script>
+
+<!-- Track clicks on the Google Play buttons. Fires a custom Meta Pixel event so the
+     landing-page -> Play Store drop-off is visible. Guarded so an ad blocker that
+     stops fbq from loading cannot throw and break the page. -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var playLinks = document.querySelectorAll('a[href*="play.google.com"]');
+  for (var i = 0; i < playLinks.length; i++) {
+    playLinks[i].addEventListener('click', function () {
+      if (typeof fbq === 'function') {
+        fbq('trackCustom', 'PlayStoreClick');
+      }
+    });
+  }
+});
 </script>
 </body>
 </html>
