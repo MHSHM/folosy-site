@@ -236,6 +236,13 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=1005710099170954&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+<!-- Auto-forward to Google Play. Added 2026-08-22.
+     Fires before paint, so the landing page is not shown to anyone with JS enabled.
+     The referrer= tag is kept verbatim so Play Console attribution still works.
+     TO REVERT: delete this whole <script> block, or `git revert` the commit. -->
+<script>
+window.location.replace('https://play.google.com/store/apps/details?id=com.folosy.app&referrer=utm_source%3Dfolosy-site%26utm_medium%3Dreferral%26utm_campaign%3Dlaunch_aug2026');
+</script>
 </head>
 <body>
 <div class="page" dir="rtl" lang="ar">
